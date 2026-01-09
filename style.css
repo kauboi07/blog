@@ -1,0 +1,92 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* THEME COLORS */
+:root {
+  --bg: #0b0b0b;
+  --glass: rgba(255, 255, 255, 0.08);
+  --yellow: #f5c400;
+  --text: #eaeaea;
+}
+
+/* BODY */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.navbar {
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  font-size: 1.1rem;
+  color: var(--yellow);
+  letter-spacing: 1px;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* GLASS CARD */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 3rem;
+  color: var(--yellow);
+  letter-spacing: 4px;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* CONTENT */
+.content h2 {
+  margin-bottom: 20px;
+  color: var(--yellow);
+}
+
+.content p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* IMAGE BOX */
+.image-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(245, 196, 0, 0.15);
+}
